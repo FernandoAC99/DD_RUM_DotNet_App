@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-md border border-gray-100">
+    <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Iniciar Sesión</h2>
+    <form action="/Home/Login" method="post" class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Usuario</label>
+            <input name="username" type="text" placeholder="Ej: FerFAC99" class="w-full p-3 border rounded-lg mt-1 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+            Entrar al Sistema
+        </button>
+    </form>
+</div>

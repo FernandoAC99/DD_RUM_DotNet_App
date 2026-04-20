@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Reportes Sensibles";
+}
+
+<div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-4 mb-8">
+        <a href="/Home/Dashboard" class="text-indigo-600 hover:underline">← Volver al Panel</a>
+        <h1 class="text-3xl font-bold text-slate-800">🔒 Área Restringida</h1>
+    </div>
+
+    <div class="bg-indigo-900 text-white p-6 rounded-xl mb-6 shadow-xl border-b-4 border-indigo-500">
+        <div class="flex items-center gap-3">
+            <div class="animate-pulse w-3 h-3 bg-red-500 rounded-full"></div>
+            <h2 class="font-bold uppercase tracking-widest text-sm text-indigo-200">Grabación de Auditoría</h2>
+        </div>
+        <p class="mt-2 text-indigo-100 italic">Información crítica detectada: Datadog Replay debe estar <span class="font-bold text-white">ACTIVO</span>.</p>
+    </div>
+
+    <div class="grid gap-4">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 border-l-4 border-l-red-500">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="font-bold text-lg">Incidente ID #992-X</h3>
+                    <p class="text-slate-500 text-sm">Clasificación: Confidencial</p>
+                </div>
+                <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded font-bold uppercase">Urgente</span>
+            </div>
+            <div class="mt-4 p-4 bg-slate-50 rounded border border-dashed text-slate-400 text-sm">
+                [ Información protegida por la ley de protección de datos ]
+            </div>
+        </div>
+        
+        <button class="bg-slate-800 text-white py-3 rounded-lg hover:bg-black transition font-bold">
+            Descargar Informe Firmado
+        </button>
+    </div>
+</div>
